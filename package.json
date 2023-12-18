@@ -1,7 +1,7 @@
 {
   "name": "auto-import-antd",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "pnpm@8.7.0",
   "description": "",
   "license": "MIT",
@@ -50,7 +50,6 @@
     "release": "bumpp && npm publish",
     "test": "vitest"
   },
-
   "dependencies": {
     "unplugin-auto-import": "^0.16.7"
   },
