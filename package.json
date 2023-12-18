@@ -1,8 +1,8 @@
 {
   "name": "auto-import-antd",
   "type": "module",
-  "version": "0.1.1",
-  "packageManager": "pnpm@8.7.0",
+  "version": "0.1.2",
+  "packageManager": "pnpm@8.12.1",
   "description": "",
   "license": "MIT",
   "homepage": "https://github.com/jiangxd2016/auto-import-antd#readme",
@@ -44,23 +44,23 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch src",
-    "lint": "eslint .",
+    "lint": "eslint --cache ./src --fix",
     "play": "npm -C playground run dev",
     "prepublishOnly": "npm run build",
     "release": "bumpp && npm publish",
     "test": "vitest"
   },
   "dependencies": {
-    "unplugin-auto-import": "^0.16.7"
+    "unplugin-auto-import": "^0.17.2"
   },
   "devDependencies": {
-    "@estjs/eslint-config": "^0.7.20",
-    "@types/node": "^20.5.7",
-    "bumpp": "^9.2.0",
+    "@estjs/eslint-config": "^0.8.32",
+    "@types/node": "^20.10.5",
+    "bumpp": "^9.2.1",
     "chalk": "^5.3.0",
-    "eslint": "^8.48.0",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.3"
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
   }
 }
