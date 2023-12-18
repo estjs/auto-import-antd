@@ -70,5 +70,5 @@ export const antdBuiltInComponents = [
   'TreeSelect',
   'Typography',
   'Upload',
-  'Watermark'
-]
+  'Watermark',
+];

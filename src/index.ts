@@ -1,3 +1,3 @@
-import { antdResolver } from './resolver'
+import { antdResolver } from './resolver';
 
-export default antdResolver
+export default antdResolver;
