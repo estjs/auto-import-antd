@@ -1,0 +1,67 @@
+{
+  "name": "auto-import-antd",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.7.0",
+  "description": "",
+  "license": "MIT",
+  "homepage": "https://github.com/jiangxd2016/auto-import-antd#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangxd2016/auto-import-antd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiangxd2016/auto-import-antd/issues"
+  },
+  "keywords": [
+    "unplugin",
+    "vite",
+    "react",
+    "ant-design",
+    "auto import"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "lint": "eslint .",
+    "play": "npm -C playground run dev",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp && npm publish",
+    "test": "vitest"
+  },
+
+  "dependencies": {
+    "unplugin-auto-import": "^0.16.7"
+  },
+  "devDependencies": {
+    "@estjs/eslint-config": "^0.7.20",
+    "@types/node": "^20.5.7",
+    "bumpp": "^9.2.0",
+    "chalk": "^5.3.0",
+    "eslint": "^8.48.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.3"
+  }
+}
